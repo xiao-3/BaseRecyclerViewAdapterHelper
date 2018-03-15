@@ -50,6 +50,8 @@ public class AnimationAdapter extends BaseQuickAdapter<Status, BaseViewHolder> {
         ((TextView) helper.getView(R.id.tweetText)).setFocusable(false);
         ((TextView) helper.getView(R.id.tweetText)).setClickable(false);
         ((TextView) helper.getView(R.id.tweetText)).setLongClickable(false);
+
+        ((TextView) helper.getView(R.id.tweetDate)).setText(item.getCreatedAt());
     }
 
     ClickableSpan clickableSpan = new ClickableSpan() {
